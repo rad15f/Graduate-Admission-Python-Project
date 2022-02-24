@@ -36,17 +36,25 @@ Logistic Regression
 
 ## Requirements:
 Before running this Main pyqt5.py file, you need the following installed on your python environment:
+
 Pip install numpy
+
 Pip install pandas
+
 Pip install matplotlib
+
 Pip install seaborn
+
 Pip install scikit-learn
+
 Pip install pydotplus*
+
 Pip install kaggle*
-https://graphviz.org/download/ install any version and put your path 
-Code No GUI (line 217) example: 'C:\\Program Files (x86)\\graphviz-2.38\\release\\bin'
+
+https://graphviz.org/download/ install any version and replace the path to your path
+Code No GUI (line 217) example: 'C:\\Program Files (x86)\\graphviz-2.38\\release\\bin' <- this is my path replace with yours
 os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz/bin'  
-Main code: If you have it installed in another path, change this path at the top of the Main.py file. Check Technical Consideration for further details
+Main code: If you have it installed in another path, change this path at the top of the Main.py file (line 52). Check Technical Consideration for further details
 
 
 Note: Using Anaconda environment saves the stress of the above apart from those in asterisk and the link. The link above is an application which works with pydotplus to plot decision trees.
