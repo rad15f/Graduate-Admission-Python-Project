@@ -1,15 +1,19 @@
 # FINAL-PROJECT-GROUP4
 
-## STEPS TO RUN
+## Steps to Run
+1. Clone this repo
+2. Install the necesary packages  (Check Requirements)
+3. Open Code No GUI or Main Code for the Graphical User Interface
+4. Run and Enjoy!
 
 
-PREDICTIVE MODELING FOR CHANCE OF ADMISSION
+## Title: Predictive Modeling for Change of Admission
 
 The Main PYQT5.py shows graphics for an EDA Analysis, as well as the results of three machine learning algorithms based on the chance of admission data set. The research's aim is to build a regression model that best predicts the chance of admission for graduate students and obtain feature importance.
 
 Code Order: The code is built from bottom to top for a more efficient GUI code readability. 
 
-Data set structure:
+## Data set structure:
 
 Independent Variable -- X  
 GRE Score
@@ -24,13 +28,13 @@ Target/ Dependant Variable -- Y
 Chance of Admission
 
 
-Machine Learning algorithms:
+## Machine Learning algorithms:
 
 Decision Tree Regression
 Random Tree Regression
 Logistic Regression
 
-Requirements:
+## Requirements:
 Before running this Main pyqt5.py file, you need the following installed on your python environment:
 Pip install numpy
 Pip install pandas
@@ -39,15 +43,19 @@ Pip install seaborn
 Pip install scikit-learn
 Pip install pydotplus*
 Pip install kaggle*
-https://graphviz.org/download/
+https://graphviz.org/download/ install any version and put your path 
+Code No GUI (line 217) example: 'C:\\Program Files (x86)\\graphviz-2.38\\release\\bin'
+os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz/bin'  
+Main code: If you have it installed in another path, change this path at the top of the Main.py file. Check Technical Consideration for further details
+
 
 Note: Using Anaconda environment saves the stress of the above apart from those in asterisk and the link. The link above is an application which works with pydotplus to plot decision trees.
 
 
-Description of files:
+## Description of files:
 
 
-Code PYQT5.py is the python file that contains all the code for the demo including the GUI.
+Code PYQT5.py is the python file that contains all the code for the demo including the GUI.(GUI = Graphical user intertace/ Dashboard)
 
 Code No GUi is the python file which contains all the code with more data visualization and more models but no GUI included.
 
@@ -55,11 +63,12 @@ Pty.png , enter.png, racoon.png are icons that are used in the menu items in the
 
 All the files need to be located in the same directory
 
-Technical considerations:
+## Technical considerations:
 
 Main is PYQ5 application, thus, pyq5 needs to be installed in the computer in order to execute this app.
 
-The application also uses graphviz-2.38, to be user to have it installed in the computer
+
+The application also uses graphviz-2.38 but can use any version, to be user to have it installed in the computer
 
 The directory that uses this application for graphviz-2.38 is:
 
@@ -68,11 +77,11 @@ If you have it installed in another path, change this path at the top of the Mai
 
 The application also uses a font_size_window = 'font-size:15px' at the top of the Main.py file, if you switch , it can be changed, just be sure to use the correct syntax for your stylesheet font size.
 
-Description of the application:
+## Description of the application:
 
 The purpose of the application is to present a basic EDA analysis of the processed dataset and three dashboards with the results of the algorithms where the user can manipulate the features and the test/train size of the model. The algorithms used are Logistic Regression, Random Forest Regression and Decision Tree Regression. These three models can be run separately, but Random Forest Regression and Logistic Regression complement each other since both give information that is relevant for making recommendations.
 
-The structure of the application is as follows
+## The structure of the application is as follows
 
 File
 Exit : it quits the application
@@ -85,7 +94,7 @@ Boxplot: This option shows a box plot which shows the range and possible outlier
 
 
 
-ML MODELS
+## Machine Learning MODELS
 
 Cross Validation:
 The dashboard for cross validation displays first hand test scores on the data set with several regression models. This gives us a view on what model works best for our data set.
