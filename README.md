@@ -7,7 +7,7 @@
 4. Run and Enjoy!
 
 
-## Title: Predictive Modeling for Change of Admission
+## Predictive Modeling using Regression Model for Change of Admission
 
 The Main PYQT5.py shows graphics for an EDA Analysis, as well as the results of three machine learning algorithms based on the chance of admission data set. The research's aim is to build a regression model that best predicts the chance of admission for graduate students and obtain feature importance.
 
